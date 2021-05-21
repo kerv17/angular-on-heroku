@@ -1,0 +1,35 @@
+.titlediv {
+    background-color: rgb(242, 104, 83);
+    align-self: center;
+    display:flexbox;
+    padding: 10%;
+}
+
+.titleh1 {
+    color: white;
+    display: flex;
+    border-radius: 4px;
+    align-self: center;
+    flex-grow: 0.1;
+    display: inline;
+    margin: auto;
+    text-align: center;
+    font-size: 5em;
+    font-family:'Quicksand';
+}
+
+.titleh2 {
+    color: white;
+    display: flex;
+    border-radius: 4px;
+    align-self: center;
+    flex-grow: 0.1;
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+    font-family:'Quicksand';
+}
+
+p {
+    font-size: 6em;
+}
