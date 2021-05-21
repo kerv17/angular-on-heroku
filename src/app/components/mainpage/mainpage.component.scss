@@ -1,8 +1,13 @@
 .titlediv {
-    background-color: rgb(242, 104, 83);
+    background-color: rgb(177, 80, 65);
     align-self: center;
-    display:flexbox;
-    padding: 10%;
+    padding: 10% 0% 10%;
+    display:flex;
+}
+
+.logo {
+    margin: auto;
+    display: grid;
 }
 
 .titleh1 {
@@ -10,8 +15,7 @@
     display: flex;
     border-radius: 4px;
     align-self: center;
-    flex-grow: 0.1;
-    display: inline;
+    display: inline-flex;
     margin: auto;
     text-align: center;
     font-size: 5em;
