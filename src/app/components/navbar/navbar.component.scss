@@ -1,0 +1,85 @@
+.titlediv {
+    background-color: var(--header-color);
+    align-self: center;
+    padding: 5% 0% 5%;
+    display:flex;
+    border-bottom: 3px black solid;
+}
+
+.logo {
+    margin: auto;
+    display: grid;
+}
+.logo > img {
+    height: 10vw;
+}
+
+.title,.subtitle,.contact-me {
+    color: white;
+    border-radius: 4px;
+    margin: auto;
+    font-size: 4vw;
+    font-family:var(--title-font);
+}
+
+    .subtitle {
+        font-size: 2.5vw;
+    }
+    .contact-me {
+        background-color: darkcyan;
+        font-size: 2em;
+        margin-top: 30px;
+        padding: 20px;
+        border: 2px black solid;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+        .contact-me:hover {
+            background-color: rgb(0, 110, 110);
+        }
+        
+
+.navbar {
+    
+    position: fixed;
+    left: 0;
+    top:0;
+    height: fit-content;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    background-color: var(--header-color);
+    color: white;
+    font-family: var(--title-font);
+    align-self: center;
+}
+    .left {
+        display: inline-flex;
+        width: fit-content;
+        margin-left: 2%;
+    }
+    .left > .title {
+        font-size: 2em;
+    }
+    .left > h1{
+        width: 20vw;
+        
+        padding: 0 20px;
+    }
+    .left > img {
+        height: 2em;
+    }
+    .navbar > .links {
+        margin: auto;
+        margin-right: 0%;
+        font-size: 1.25vw;
+        display: flex;
+    }
+    .navbar > .links > p {
+        margin: 30px;
+        margin-right: 0%;
+    }
+    .navbar > .contact-me {
+        margin: 1% 2.5% 1% 2.5%;
+        font-size: 1.25vw;
+    }
