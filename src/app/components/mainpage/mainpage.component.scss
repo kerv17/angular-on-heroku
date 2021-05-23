@@ -4,7 +4,7 @@
     align-self: center;
     padding: 5% 0% 5%;
     display:flex;
-    border-bottom: 3px black solid;
+    min-height: auto;
 }
 
 .logo {
@@ -27,7 +27,7 @@
         font-size: 2.5vw;
     }
 
-    .contact-me {
+    * > .contact-me {
         background-color: darkcyan;
         font-size: 2em;
         margin-top: 30px;
@@ -50,7 +50,8 @@
     #Proficiencies > h2 {
         width: calc(100%-50px);
         text-align: center;
-        padding: 100px 50px 50px;
+        padding: 100px 50px 25px;
+        font-size: 4vh;
     }
 
 .list {
@@ -80,3 +81,4 @@
                 text-align: center;
                 padding: 20px;
             }
+

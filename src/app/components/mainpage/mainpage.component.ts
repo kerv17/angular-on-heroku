@@ -1,30 +1,35 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-mainpage',
   templateUrl: './mainpage.component.html',
   styleUrls: ['./mainpage.component.scss']
 })
-export class MainpageComponent implements OnInit {
-
-  private navbar:HTMLElement;
-  private title:HTMLElement;
-
+export class MainpageComponent implements OnInit{
+  private button:HTMLAnchorElement;
+  private titleDiv:HTMLElement;
+  hide:boolean;
   constructor() {
-    window.onscroll = this.scrollFunction;
+    
    }
   ngOnInit(): void {
-    this.navbar = (document.getElementById('navbar') as HTMLElement);
-    this.title = (document.getElementById('title') as HTMLElement);
-    this.scrollFunction();
+    this.titleDiv = (document.getElementById('titles')?.parentElement as HTMLElement);
+    this.button = (document.getElementById('contact') as HTMLAnchorElement);
   }
 
 
 
-  scrollFunction() {
-    let rect: DOMRect = this.title.getBoundingClientRect()
-    this.navbar.hidden = (rect.bottom - 50) > 0;
-    this.title.style.visibility = !this.navbar.hidden ? 'hidden' : 'visible';
+  @HostListener('window:scroll',['$event'])
+  scrollFunction(event:Event) {
+    this.titleDiv = (document.getElementById('titles')?.parentElement as HTMLElement);
+    let rect: DOMRect = this.titleDiv.getBoundingClientRect();
+    this.hide = (rect.bottom - this.getHeight(this.titleDiv)*0.8) < 0;
   }
+  
+  
 
+  getHeight(elem:HTMLElement):number{
+    let rect: DOMRect = this.titleDiv.getBoundingClientRect();
+    return rect.height;
+  }
 }
