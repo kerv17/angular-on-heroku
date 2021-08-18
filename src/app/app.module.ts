@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectComponent } from './components/project/project.component';
+import { DemosComponent } from './components/demos/demos/demos.component';
+import { JungleFighterComponent } from './components/demos/demos/jungle-fighter/jungle-fighter/jungle-fighter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainpageComponent,
     NavbarComponent,
-    ProjectComponent
+    ProjectComponent,
+    DemosComponent,
+    JungleFighterComponent
   ],
   imports: [
     BrowserModule,

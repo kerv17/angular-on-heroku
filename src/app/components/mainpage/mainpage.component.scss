@@ -93,7 +93,18 @@
                 width: fit-content;
                 margin:auto;
             }
+            .stars{
+                width: fit-content;
+                margin: auto;
+                padding-top: 20px;
+            }
+                .stars > span {
+                    padding: 5px;
+                }
 
+                .checked {
+                  color: CornflowerBlue;     
+                }
             .item > p {
                 text-align: center;
                 padding: 20px;
@@ -105,4 +116,8 @@ a {
 }
 a:hover{
     color: lightgrey;
+}
+
+.navbars {
+    position: fixed; left: 0; right: 0;
 }
