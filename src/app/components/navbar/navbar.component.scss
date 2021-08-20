@@ -41,7 +41,7 @@
 
 .navbar {
     
-    position: fixed;
+    position: sticky;
     left: 0;
     top:0;
     height: fit-content;
@@ -75,11 +75,24 @@
         font-size: 1.25vw;
         display: flex;
     }
-    .navbar > .links > p {
+    .navbar > .links > a {
         margin: 30px;
-        margin-right: 0%;
+    }
+    .links > a:hover {
+        color: lightgray;
     }
     .navbar > .contact-me {
         margin: 1% 2.5% 1% 2.5%;
         font-size: 1.25vw;
     }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: lightgrey;
+}
+a > h1 {
+    color: inherit;
+}

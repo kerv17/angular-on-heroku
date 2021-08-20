@@ -58,13 +58,13 @@
                 color: lightgray;
             }
 
-#Proficiencies {
+#Projects {
     background-color: var(--background-color);
     color: white;
     font-family: var(--title-font);
     width: 100%;
 }
-    #Proficiencies > h2 {
+    #Projects > h2 {
         width: calc(100%-50px);
         text-align: center;
         padding: 100px 50px 25px;
@@ -111,11 +111,10 @@
             }
 
 a {
-    color: white;
-    text-decoration: none;
+    color: violet;
 }
 a:hover{
-    color: lightgrey;
+    color: lightpink;
 }
 
 .navbars {
